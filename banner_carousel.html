@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
+    <title>Portrait Image Carousel</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Custom styles for the carousel -->
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #imageCarousel {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .carousel-item {
+            text-align: center;
+        }
+
         .carousel-item img {
+            max-width: 300px; /* Set your desired width */
             width: 100%;
-            height: 400px; /* Set your desired height */
-            object-fit: cover;
+            height: auto;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -22,13 +39,13 @@
     <div id="imageCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://placekitten.com/800/400" class="d-block w-100" alt="Slide 1">
+                <img src="https://cdn.yellowmessenger.com/5z2Oxwyqn9pA1697195547110.jpg" alt="Slide 1">
             </div>
             <div class="carousel-item">
-                <img src="https://placekitten.com/801/400" class="d-block w-100" alt="Slide 2">
+                <img src="https://cdn.yellowmessenger.com/5z2Oxwyqn9pA1697195547110.jpg" alt="Slide 2">
             </div>
             <div class="carousel-item">
-                <img src="https://placekitten.com/802/400" class="d-block w-100" alt="Slide 3">
+                <img src="https://cdn.yellowmessenger.com/5z2Oxwyqn9pA1697195547110.jpg" alt="Slide 3">
             </div>
             <!-- Add more carousel items with additional images as needed -->
         </div>
@@ -49,4 +66,3 @@
 
 </body>
 </html>
-
